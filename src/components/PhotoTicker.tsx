@@ -15,8 +15,8 @@ export const PhotoTicker: React.FC = () => {
     <div className="bg-[#0E2F23] py-5 overflow-hidden select-none border-b border-[#051d15]">
       <div className="flex items-center">
         {/* Label kiri */}
-        <div className="shrink-0 pl-3 pr-3 sm:px-10 text-[8px] sm:text-[10px] font-semibold tracking-widest uppercase text-white/40 border-r border-white/10 mr-2 sm:mr-6 leading-relaxed w-20 sm:w-auto whitespace-normal sm:whitespace-nowrap">
-          Sebagian kecil sepatu brand yang telah kami kerjakan
+        <div className="shrink-0 pl-3 pr-3 sm:px-8 text-[8px] sm:text-[10px] font-semibold tracking-widest uppercase text-white/40 border-r border-white/10 mr-2 sm:mr-6 leading-relaxed w-20 sm:w-auto whitespace-normal">
+          Sebagian kecil<br className="hidden sm:block" />sepatu brand yang<br className="hidden sm:block" />telah kami kerjakan
         </div>
 
         {/* Scrolling track */}
