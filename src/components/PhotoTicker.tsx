@@ -16,7 +16,7 @@ export const PhotoTicker: React.FC = () => {
       <div className="flex items-center">
         {/* Label kiri */}
         <div className="shrink-0 px-4 sm:px-10 text-[9px] sm:text-[10px] font-semibold tracking-widest uppercase text-white/40 whitespace-nowrap border-r border-white/10 mr-3 sm:mr-6 leading-tight">
-          Sepatu yang pernah<br />kami kerjakan
+          Sebagian kecil<br />sepatu brand yang<br />telah kami kerjakan
         </div>
 
         {/* Scrolling track */}
@@ -26,9 +26,9 @@ export const PhotoTicker: React.FC = () => {
           {/* Fade kanan */}
           <div className="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-[#0E2F23] to-transparent z-10 pointer-events-none" />
 
-          <div className="flex items-center gap-4 ticker-track-photo" aria-hidden="true">
+          <div className="flex items-center gap-2 sm:gap-4 ticker-track-photo" aria-hidden="true">
             {TICKER_ITEMS.map((item, i) => (
-              <div key={i} className="shrink-0 w-28 sm:w-48 md:w-60 bg-[#092219] rounded-xl overflow-hidden border border-white/5 relative group">
+              <div key={i} className="shrink-0 w-24 sm:w-48 md:w-60 bg-[#092219] rounded-xl overflow-hidden border border-white/5 relative group">
                 {/* Foto Hasil Kerja */}
                 <div className="w-full aspect-[4/3] bg-slate-900 overflow-hidden relative">
                   {item.image ? (

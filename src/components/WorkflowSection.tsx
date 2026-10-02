@@ -139,20 +139,20 @@ const StepCard: React.FC<StepCardProps> = ({ st, trackingLive, activeStep, track
           <span className="text-[11px] font-bold text-slate-700">Simulasi Alur Status Batch</span>
           <span className="text-[10px] text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Loop Otomatis</span>
         </div>
-        <div className="grid grid-cols-5 gap-1 text-center">
+        <div className="flex flex-col sm:grid sm:grid-cols-5 gap-3 sm:gap-1 mt-2">
           {trackingSteps.map((name, sIdx) => {
             const isCurrent = sIdx === activeStep;
             const isPast = sIdx < activeStep;
             return (
-              <div key={sIdx} className="flex flex-col items-center gap-1">
-                <div className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold transition-all ${
+              <div key={sIdx} className="flex flex-row sm:flex-col items-center gap-3 sm:gap-1 sm:text-center">
+                <div className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold transition-all ${
                   isCurrent ? 'bg-[#FFC43D] text-[#0F172A] ring-2 ring-[#FFC43D]/40'
                   : isPast   ? 'bg-[#16A085] text-white'
                              : 'bg-slate-100 text-slate-400'
                 }`}>
                   {isPast ? <CheckCircle2 className="w-3.5 h-3.5" /> : sIdx + 1}
                 </div>
-                <span className={`text-[9px] leading-tight ${isCurrent ? 'font-bold text-[#0E6B58]' : isPast ? 'text-slate-600' : 'text-slate-400'}`}>
+                <span className={`text-[11px] sm:text-[9px] leading-tight text-left sm:text-center ${isCurrent ? 'font-bold text-[#0E6B58]' : isPast ? 'text-slate-600' : 'text-slate-400'}`}>
                   {name}
                 </span>
               </div>
