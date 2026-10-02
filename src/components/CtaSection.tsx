@@ -20,7 +20,7 @@ export const CtaSection: React.FC = () => {
     issues: issueType || '[Jenis Kerusakan Sol / Jahitan / Cacat]',
   });
 
-  const previewMessage = `Halo Tim Sole Solution (Shoe Workshop),
+  const previewMessage = `Halo Tim Sole Solution,
 
 Saya ingin konsultasi reparasi B2B untuk brand kami:
 - Nama Brand: ${brandName || '[Nama Brand Anda]'}

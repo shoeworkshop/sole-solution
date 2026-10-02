@@ -63,7 +63,7 @@ export const ComparisonSection: React.FC = () => {
                 <MapPin className="w-3.5 h-3.5 text-white/80" />
               </div>
               <div className="text-[10px] sm:text-xs font-bold text-white/60 uppercase tracking-widest leading-tight">
-                Shoe Workshop, Bandung<br/>Sejak 2017
+                Sole Solution, Bandung<br/>Sejak 2017
               </div>
             </div>
             

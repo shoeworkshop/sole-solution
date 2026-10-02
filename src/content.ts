@@ -122,11 +122,11 @@ export const siteContent: SiteContent = {
   trackingLive: true,
   brand: {
     name: "Sole Solution",
-    subBrand: "by Shoe Workshop",
-    foundingFact: "Shoe Workshop, Bandung, sejak 2017.",
+    subBrand: "",
+    foundingFact: "Sole Solution, Bandung, sejak 2017.",
     whatsappNumber: "6285168125219",
     whatsappDefaultMessage: 
-`Halo Tim Sole Solution (Shoe Workshop),
+`Halo Tim Sole Solution,
 
 Saya ingin konsultasi reglue B2B untuk bisnis kami:
 - Nama Bisnis (Brand / Laundry): 
@@ -136,7 +136,7 @@ Saya ingin konsultasi reglue B2B untuk bisnis kami:
 Mohon informasi alur kerja sama. Terima kasih!`,
   },
   hero: {
-    eyebrow: "Layanan reglue (lem & jahit) sepatu oleh Shoe Workshop",
+    eyebrow: "Layanan reglue (lem & jahit) sepatu",
     headline: "Partner reglue sepatu untuk brand dan laundry sepatu.",
     singleSentence: "Sol lepas dan jahitan terlepas dikerjakan di workshop kami di Bandung: dua kali QC, jalur terpisah dari antrean ritel, estimasi 10-15 hari kerja.",
     ctaButtonText: "Konsultasi Sekarang",
@@ -148,7 +148,7 @@ Mohon informasi alur kerja sama. Terima kasih!`,
   comparison: {
     title: "Reglue yang dikerjakan terpisah dan diperiksa dua kali",
     subtitle: "Perbandingan alur penanganan sepatu yang butuh reglue.",
-    foundingFact: "Shoe Workshop, Bandung, sejak 2017.",
+    foundingFact: "Sole Solution, Bandung, sejak 2017.",
     columns: {
       general: "Reparasi umum (satuan)",
       inHouse: "Tim internal brand",
@@ -397,8 +397,8 @@ Mohon informasi alur kerja sama. Terima kasih!`,
     note: "Pesan WhatsApp sudah terisi format awal kebutuhan Anda.",
   },
   footer: {
-    copyright: "© 2026 Sole Solution by Shoe Workshop. Hak Cipta Dilindungi.",
-    workshopNotice: "Layanan reglue (lem & jahit) B2B oleh Shoe Workshop (Bandung, sejak 2017).",
+    copyright: "© 2026 Sole Solution. Hak Cipta Dilindungi.",
+    workshopNotice: "Layanan reglue (lem & jahit) B2B (Bandung, sejak 2017).",
   },
 };
 
@@ -415,7 +415,7 @@ export function createWhatsAppUrl(customParams?: {
     const vol = customParams.volume || "";
     const iss = customParams.issues || "";
 
-    text = `Halo Tim Sole Solution (Shoe Workshop),
+    text = `Halo Tim Sole Solution,
 
 Saya ingin konsultasi reglue B2B untuk bisnis kami:
 - Nama Bisnis (Brand / Laundry): ${brand}
@@ -432,7 +432,7 @@ export const jalurB2B = {
   photo: "/grid.png",       
   photoMobile: "",   
   alt: "Area pengerjaan B2B Sole Solution di workshop Bandung",
-  caption: "Shoe Workshop, Bandung, sejak 2017.",
+  caption: "Sole Solution, Bandung, sejak 2017.",
   dummy: false,
   spots: [
     { id: "rak",   label: "Rak B2B",              x: 15, y: 25, xm: 15, ym: 25,
