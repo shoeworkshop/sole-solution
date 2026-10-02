@@ -14,7 +14,7 @@ import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-[#1E293B] font-sans flex flex-col overflow-x-hidden w-full max-w-[100vw]">
+    <div className="min-h-screen bg-[#F8FAFC] text-[#1E293B] font-sans flex flex-col overflow-x-clip w-full max-w-[100vw]">
       {/* 1. Navbar (Kenapa Kami, Tiga Program, Alur 7 Langkah, Bukti, FAQ) */}
       <Navbar />
 
