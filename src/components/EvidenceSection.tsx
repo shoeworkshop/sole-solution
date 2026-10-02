@@ -117,18 +117,23 @@ export const EvidenceSection: React.FC<EvidenceSectionProps> = ({ forceEmpty = f
   return (
     <section id="bukti" className="py-16 sm:py-24 bg-white border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Section Header (Tanpa eyebrow, tanpa tag mono) */}
+        {/* Header — terpusat */}
         <motion.div
           initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-40px' }}
           transition={{ duration: 0.6, ease: easeCurve }}
-          className="max-w-2xl mb-14"
+          className="text-center max-w-2xl mx-auto mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <span className="block w-6 h-px bg-[#0E6B58]" />
+            <span className="text-xs font-bold tracking-widest uppercase text-slate-400">Galeri & Testimoni</span>
+            <span className="block w-6 h-px bg-[#0E6B58]" />
+          </div>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             {title}
           </h2>
-          <p className="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
+          <p className="text-sm sm:text-base text-slate-500 mt-3 leading-relaxed">
             {subtitle}
           </p>
         </motion.div>
@@ -136,11 +141,11 @@ export const EvidenceSection: React.FC<EvidenceSectionProps> = ({ forceEmpty = f
         {/* 1. Kolase Foto Asimetris (Aspek Bervariasi: 16:9, 1:1, 4:3) */}
         {photoList.length > 0 && (
           <div className="mb-16">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6">
+            <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 -mx-4 px-4 md:grid md:grid-cols-12 md:overflow-visible md:snap-none md:pb-0 md:mx-0 md:px-0 md:gap-6 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               {photoList.map((photo) => (
                 <div
                   key={photo.id}
-                  className={`${photo.colSpanClass} ${photo.aspectClass} rounded-2xl overflow-hidden border border-slate-200/80 relative group w-full bg-slate-100 flex flex-col items-center justify-center text-center select-none shadow-sm hover:shadow-md transition-shadow`}
+                  className={`shrink-0 w-[85%] sm:w-[70%] md:w-auto snap-center ${photo.colSpanClass} ${photo.aspectClass} rounded-2xl overflow-hidden border border-slate-200/80 relative group bg-slate-100 flex flex-col items-center justify-center text-center select-none shadow-sm hover:shadow-md transition-shadow`}
                 >
                     {photo.images && photo.images.length > 0 ? (
                       <PhotoCarousel images={photo.images} title={photo.title} caption={photo.caption} onImageClick={setSelectedImage} />
@@ -173,13 +178,13 @@ export const EvidenceSection: React.FC<EvidenceSectionProps> = ({ forceEmpty = f
             
             <div className="w-full max-w-4xl mx-auto relative px-0 sm:px-16 min-h-[220px] flex flex-col justify-center">
               
-              {/* Arrows - Now positioned relative to this inner container */}
+              {/* Arrows - Left & Right (Desktop Only) */}
               {testimonials.length > 1 && (
                 <>
                   <button
                     type="button"
                     onClick={() => setActiveTestiIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1))}
-                    className="absolute -left-2 sm:left-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-400 hover:text-slate-600 hover:bg-slate-50 transition-all opacity-0 group-hover/testi:opacity-100 z-10"
+                    className="hidden lg:flex absolute -left-6 xl:-left-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white border border-slate-200 shadow-md items-center justify-center text-slate-400 hover:text-slate-600 hover:bg-slate-50 transition-all opacity-0 group-hover/testi:opacity-100 z-10"
                     aria-label="Kutipan sebelumnya"
                   >
                     <ChevronLeft className="w-5 h-5 -ml-0.5" />
@@ -187,7 +192,7 @@ export const EvidenceSection: React.FC<EvidenceSectionProps> = ({ forceEmpty = f
                   <button
                     type="button"
                     onClick={() => setActiveTestiIndex((prev) => (prev + 1) % testimonials.length)}
-                    className="absolute -right-2 sm:right-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-400 hover:text-slate-600 hover:bg-slate-50 transition-all opacity-0 group-hover/testi:opacity-100 z-10"
+                    className="hidden lg:flex absolute -right-6 xl:-right-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white border border-slate-200 shadow-md items-center justify-center text-slate-400 hover:text-slate-600 hover:bg-slate-50 transition-all opacity-0 group-hover/testi:opacity-100 z-10"
                     aria-label="Kutipan berikutnya"
                   >
                     <ChevronRight className="w-5 h-5 -mr-0.5" />
@@ -206,7 +211,7 @@ export const EvidenceSection: React.FC<EvidenceSectionProps> = ({ forceEmpty = f
                   <Quote className="w-8 h-8 text-[#16A085]/40 mb-6" />
                   
                   {/* Kutipan besar dominan */}
-                  <blockquote className="text-lg sm:text-2xl font-medium text-slate-800 leading-snug tracking-tight mb-8">
+                  <blockquote className="text-base sm:text-xl lg:text-2xl font-medium text-slate-800 leading-relaxed sm:leading-snug tracking-tight mb-8">
                     "{currentTesti.quote}"
                   </blockquote>
 

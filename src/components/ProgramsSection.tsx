@@ -106,12 +106,17 @@ export const ProgramsSection: React.FC = () => {
   return (
     <section id="program" ref={containerRef} className="py-16 sm:py-24 bg-white border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Section Header (Tanpa eyebrow, tanpa tag mono) */}
-        <div className="max-w-2xl mb-12">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+        {/* Header — terpusat */}
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <span className="block w-6 h-px bg-[#0E6B58]" />
+            <span className="text-xs font-bold tracking-widest uppercase text-slate-400">Pilihan Program</span>
+            <span className="block w-6 h-px bg-[#0E6B58]" />
+          </div>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             {title}
           </h2>
-          <p className="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
+          <p className="text-sm sm:text-base text-slate-500 mt-3 leading-relaxed">
             {subtitle}
           </p>
         </div>

@@ -15,18 +15,25 @@ export const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden border-b border-slate-200 bg-[#F8FAFC]">
       {/* Foto hero: cover seluruh section, gradient yang mengatur fade-nya */}
-      <div className="absolute inset-0 hidden lg:block pointer-events-none">
-        {/* Gradient diagonal brush dari kiri — ini satu-satunya "pemotong" */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Gradient Desktop */}
         <div
-          className="absolute inset-0 z-10"
+          className="absolute inset-0 z-10 hidden lg:block"
           style={{
             background: 'linear-gradient(108deg, #F8FAFC 38%, #F8FAFCcc 52%, transparent 68%)',
+          }}
+        />
+        {/* Gradient Mobile (vertikal) */}
+        <div
+          className="absolute inset-0 z-10 lg:hidden"
+          style={{
+            background: 'linear-gradient(to bottom, #F8FAFC 45%, #F8FAFCdd 65%, transparent 100%)',
           }}
         />
         <img
           src="/hero.png"
           alt="Workshop reparasi sepatu Sole Solution"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center opacity-60 lg:opacity-100"
         />
       </div>
 

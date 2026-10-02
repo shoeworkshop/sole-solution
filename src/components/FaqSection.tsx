@@ -16,18 +16,23 @@ export const FaqSection: React.FC = () => {
   return (
     <section id="faq" className="py-16 sm:py-24 bg-slate-50/50 border-b border-slate-200">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        {/* Section Header (Tanpa eyebrow) */}
+        {/* Header — terpusat */}
         <motion.div
           initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-40px' }}
           transition={{ duration: 0.6, ease: easeCurve }}
-          className="max-w-2xl mb-12"
+          className="text-center max-w-2xl mx-auto mb-16"
         >
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <span className="block w-6 h-px bg-[#0E6B58]" />
+            <span className="text-xs font-bold tracking-widest uppercase text-slate-400">Tanya Jawab (FAQ)</span>
+            <span className="block w-6 h-px bg-[#0E6B58]" />
+          </div>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             {title}
           </h2>
-          <p className="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
+          <p className="text-sm sm:text-base text-slate-500 mt-3 leading-relaxed">
             {subtitle}
           </p>
         </motion.div>

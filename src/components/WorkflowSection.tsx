@@ -48,10 +48,10 @@ export const WorkflowSection: React.FC = () => {
         {/* Timeline zigzag */}
         <div className="relative">
           {/* Garis vertikal tengah — background (abu-abu) */}
-          <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] bg-slate-200 hidden lg:block" />
+          <div className="absolute left-5 lg:left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] bg-slate-200" />
 
           {/* Garis vertikal tengah — progress (hijau dengan glow) */}
-          <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] hidden lg:block z-0">
+          <div className="absolute left-5 lg:left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] z-0">
             <motion.div
               className="w-full bg-[#16A085] origin-top shadow-[0_0_12px_2px_rgba(22,160,133,0.8)]"
               style={{ scaleY: shouldReduceMotion ? 1 : lineScaleY, height: '100%' }}
@@ -65,12 +65,12 @@ export const WorkflowSection: React.FC = () => {
               const fromX = isLeft ? -40 : 40;
 
               return (
-                <div key={st.step} className="relative grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] items-center gap-6 lg:gap-0">
+                <div key={st.step} className="relative grid grid-cols-[auto_1fr] lg:grid-cols-[1fr_auto_1fr] items-start lg:items-center gap-5 lg:gap-0">
 
-                  {/* Kolom kiri */}
+                  {/* Kolom kiri (Desktop) / Konten Kanan (Mobile) */}
                   {isLeft ? (
                     <motion.div
-                      className="lg:pr-14 xl:pr-20"
+                      className="order-2 lg:order-1 lg:pr-14 xl:pr-20 pb-4 lg:pb-0"
                       initial={shouldReduceMotion ? false : { opacity: 0, x: fromX }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true, margin: '-60px' }}
@@ -79,16 +79,18 @@ export const WorkflowSection: React.FC = () => {
                       <StepCard st={st} idx={idx} trackingLive={trackingLive} activeStep={activeStep} trackingSteps={trackingSteps} />
                     </motion.div>
                   ) : (
-                    <div className="hidden lg:block" />
+                    <div className="hidden lg:block order-1" />
                   )}
 
-                  {/* Node angka di tengah */}
-                  <TimelineNode step={st.step} />
+                  {/* Node angka di tengah (Desktop) / Kiri (Mobile) */}
+                  <div className="order-1 lg:order-2 mt-0.5 lg:mt-0">
+                    <TimelineNode step={st.step} />
+                  </div>
 
-                  {/* Kolom kanan */}
+                  {/* Kolom kanan (Desktop) / Konten Kanan (Mobile) */}
                   {!isLeft ? (
                     <motion.div
-                      className="lg:pl-14 xl:pl-20"
+                      className="order-2 lg:order-3 lg:pl-14 xl:pl-20 pb-4 lg:pb-0"
                       initial={shouldReduceMotion ? false : { opacity: 0, x: fromX }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true, margin: '-60px' }}
@@ -97,7 +99,7 @@ export const WorkflowSection: React.FC = () => {
                       <StepCard st={st} idx={idx} trackingLive={trackingLive} activeStep={activeStep} trackingSteps={trackingSteps} />
                     </motion.div>
                   ) : (
-                    <div className="hidden lg:block" />
+                    <div className="hidden lg:block order-3" />
                   )}
 
                 </div>
