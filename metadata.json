@@ -1,0 +1,6 @@
+{
+  "name": "Sole Solution - Layanan Reparasi Sepatu B2B",
+  "description": "Mitra reparasi sepatu untuk klaim garansi, after-sales, dan rework stok produksi brand oleh Shoe Workshop.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
