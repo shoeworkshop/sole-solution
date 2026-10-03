@@ -33,9 +33,9 @@ export const WorkflowSection: React.FC = () => {
         {/* Header — terpusat */}
         <div className="text-center max-w-2xl mx-auto mb-20">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="block w-6 h-px bg-[#0E6B58]" />
+            <span className="block w-6 h-px bg-[#0f2e5f]" />
             <span className="text-xs font-bold tracking-widest uppercase text-slate-400">Proses Kerja</span>
-            <span className="block w-6 h-px bg-[#0E6B58]" />
+            <span className="block w-6 h-px bg-[#0f2e5f]" />
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             {title}
@@ -53,7 +53,7 @@ export const WorkflowSection: React.FC = () => {
           {/* Garis vertikal tengah — progress (hijau dengan glow) */}
           <div className="absolute left-5 lg:left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] z-0">
             <motion.div
-              className="w-full bg-[#16A085] origin-top shadow-[0_0_12px_2px_rgba(22,160,133,0.8)]"
+              className="w-full bg-[#1d4ed8] origin-top shadow-[0_0_12px_2px_rgba(22,160,133,0.8)]"
               style={{ scaleY: shouldReduceMotion ? 1 : lineScaleY, height: '100%' }}
             />
           </div>
@@ -123,10 +123,10 @@ interface StepCardProps {
 
 const StepCard: React.FC<StepCardProps> = ({ st, trackingLive, activeStep, trackingSteps }) => (
   <div className="group">
-    <p className="text-[11px] font-bold tracking-widest uppercase text-[#0E6B58] mb-1">
+    <p className="text-[11px] font-bold tracking-widest uppercase text-[#0f2e5f] mb-1">
       Langkah {st.step}
     </p>
-    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 group-hover:text-[#0E6B58] transition-colors">
+    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 group-hover:text-[#0f2e5f] transition-colors">
       {st.title}
     </h3>
     <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
@@ -137,7 +137,7 @@ const StepCard: React.FC<StepCardProps> = ({ st, trackingLive, activeStep, track
       <div className="mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200 shadow-xs max-w-sm">
         <div className="flex items-center justify-between mb-3">
           <span className="text-[11px] font-bold text-slate-700">Simulasi Alur Status Batch</span>
-          <span className="text-[10px] text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded">Loop Otomatis</span>
+          <span className="text-[10px] text-blue-700 font-semibold bg-blue-50 px-2 py-0.5 rounded">Loop Otomatis</span>
         </div>
         <div className="flex flex-col sm:grid sm:grid-cols-5 gap-3 sm:gap-1 mt-2">
           {trackingSteps.map((name, sIdx) => {
@@ -147,12 +147,12 @@ const StepCard: React.FC<StepCardProps> = ({ st, trackingLive, activeStep, track
               <div key={sIdx} className="flex flex-row sm:flex-col items-center gap-3 sm:gap-1 sm:text-center">
                 <div className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold transition-all ${
                   isCurrent ? 'bg-[#FFC43D] text-[#0F172A] ring-2 ring-[#FFC43D]/40'
-                  : isPast   ? 'bg-[#16A085] text-white'
+                  : isPast   ? 'bg-[#1d4ed8] text-white'
                              : 'bg-slate-100 text-slate-400'
                 }`}>
                   {isPast ? <CheckCircle2 className="w-3.5 h-3.5" /> : sIdx + 1}
                 </div>
-                <span className={`text-[11px] sm:text-[9px] leading-tight text-left sm:text-center ${isCurrent ? 'font-bold text-[#0E6B58]' : isPast ? 'text-slate-600' : 'text-slate-400'}`}>
+                <span className={`text-[11px] sm:text-[9px] leading-tight text-left sm:text-center ${isCurrent ? 'font-bold text-[#0f2e5f]' : isPast ? 'text-slate-600' : 'text-slate-400'}`}>
                   {name}
                 </span>
               </div>
@@ -174,7 +174,7 @@ const TimelineNode: React.FC<{ step: number }> = ({ step }) => {
       ref={ref}
       className={`flex-shrink-0 w-10 h-10 rounded-full border-2 flex items-center justify-center text-sm font-extrabold shadow-sm z-10 mx-auto lg:mx-0 transition-all duration-500 ease-out ${
         isActive
-          ? 'bg-[#16A085] border-[#16A085] text-white shadow-[0_0_15px_rgba(22,160,133,0.5)] scale-110'
+          ? 'bg-[#1d4ed8] border-[#1d4ed8] text-white shadow-[0_0_15px_rgba(22,160,133,0.5)] scale-110'
           : 'bg-white border-slate-200 text-slate-400 scale-100'
       }`}
     >

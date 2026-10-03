@@ -21,7 +21,7 @@ export const ComparisonSection: React.FC = () => {
   const opacity = useTransform(scrollYProgress, [0.3, 0.8], [1, 0]);
 
   return (
-    <section ref={sectionRef} id="kenapa-kami-tabel" className="pt-16 sm:pt-24 pb-16 sm:pb-24 bg-[#09493B] relative z-10 overflow-hidden">
+    <section ref={sectionRef} id="kenapa-kami-tabel" className="pt-16 sm:pt-24 pb-16 sm:pb-24 bg-[#0f172a] relative z-10 overflow-hidden">
       <motion.div style={{ opacity }} className="max-w-6xl mx-auto px-4 sm:px-6">
         
         {/* Header */}
@@ -114,11 +114,11 @@ export const ComparisonSection: React.FC = () => {
                             </div>
                             
                             <div className="bg-white rounded-xl p-4 shadow-lg">
-                              <div className="flex items-center gap-2 mb-2 text-[#0E6B58]">
-                                <div className="w-5 h-5 rounded-full bg-[#0E6B58] flex items-center justify-center shrink-0">
+                              <div className="flex items-center gap-2 mb-2 text-[#0f2e5f]">
+                                <div className="w-5 h-5 rounded-full bg-[#0f2e5f] flex items-center justify-center shrink-0">
                                   <Check className="w-3 h-3 stroke-[3] text-white" />
                                 </div>
-                                <span className="text-[10px] font-bold uppercase tracking-widest text-[#0E6B58]">Sole Solution</span>
+                                <span className="text-[10px] font-bold uppercase tracking-widest text-[#0f2e5f]">Sole Solution</span>
                               </div>
                               <p className="text-sm font-extrabold text-slate-900 leading-snug">
                                 {row.soleSolution}
@@ -183,11 +183,11 @@ export const ComparisonSection: React.FC = () => {
                   transition={{ duration: 0.5, delay: 0.15, type: "spring", bounce: 0.4 }}
                   className="col-start-1 row-start-1 w-full sm:w-[85%] bg-white rounded-3xl p-6 sm:p-7 shadow-2xl z-10 self-end justify-self-center lg:justify-self-end mt-32 sm:mt-36 lg:mt-40 lg:-mr-4"
                 >
-                  <div className="flex items-center gap-3 mb-3 text-[#0E6B58]">
-                    <div className="w-6 h-6 rounded-full bg-[#0E6B58] flex items-center justify-center shrink-0">
+                  <div className="flex items-center gap-3 mb-3 text-[#0f2e5f]">
+                    <div className="w-6 h-6 rounded-full bg-[#0f2e5f] flex items-center justify-center shrink-0">
                       <Check className="w-4 h-4 stroke-[3] text-white" />
                     </div>
-                    <span className="text-xs font-bold uppercase tracking-widest text-[#0E6B58]">Sole Solution</span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-[#0f2e5f]">Sole Solution</span>
                   </div>
                   <p className="text-lg sm:text-xl lg:text-2xl font-extrabold text-slate-900 leading-snug">
                     {activeRow.soleSolution}

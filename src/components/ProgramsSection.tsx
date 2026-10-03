@@ -50,7 +50,7 @@ const ProgramPanel: React.FC<ProgramPanelProps> = ({
             {program.title}
           </h3>
 
-          <p className="text-sm sm:text-base font-semibold text-[#0E6B58] mb-4">
+          <p className="text-sm sm:text-base font-semibold text-[#0f2e5f] mb-4">
             {program.tagline}
           </p>
 
@@ -69,7 +69,7 @@ const ProgramPanel: React.FC<ProgramPanelProps> = ({
                   key={dIdx}
                   className="flex items-start gap-2 text-xs sm:text-sm text-slate-700 bg-white p-3 rounded-xl border border-slate-200/60"
                 >
-                  <Check className="w-4 h-4 text-[#16A085] shrink-0 mt-0.5" />
+                  <Check className="w-4 h-4 text-[#1d4ed8] shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -109,9 +109,9 @@ export const ProgramsSection: React.FC = () => {
         {/* Header — terpusat */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="block w-6 h-px bg-[#0E6B58]" />
+            <span className="block w-6 h-px bg-[#0f2e5f]" />
             <span className="text-xs font-bold tracking-widest uppercase text-slate-400">Pilihan Program</span>
-            <span className="block w-6 h-px bg-[#0E6B58]" />
+            <span className="block w-6 h-px bg-[#0f2e5f]" />
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             {title}

@@ -25,9 +25,9 @@ export const FaqSection: React.FC = () => {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="block w-6 h-px bg-[#0E6B58]" />
+            <span className="block w-6 h-px bg-[#0f2e5f]" />
             <span className="text-xs font-bold tracking-widest uppercase text-slate-400">Tanya Jawab (FAQ)</span>
-            <span className="block w-6 h-px bg-[#0E6B58]" />
+            <span className="block w-6 h-px bg-[#0f2e5f]" />
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             {title}
@@ -47,7 +47,7 @@ export const FaqSection: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => toggleItem(item.id)}
-                  className="w-full text-left flex items-center justify-between gap-4 py-1 text-slate-900 hover:text-[#0E6B58] transition-colors focus:outline-none"
+                  className="w-full text-left flex items-center justify-between gap-4 py-1 text-slate-900 hover:text-[#0f2e5f] transition-colors focus:outline-none"
                   aria-expanded={isOpen}
                 >
                   <span className="text-sm sm:text-base font-bold leading-snug">
@@ -55,7 +55,7 @@ export const FaqSection: React.FC = () => {
                   </span>
                   <ChevronDown
                     className={`w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200 ${
-                      isOpen ? 'rotate-180 text-[#0E6B58]' : ''
+                      isOpen ? 'rotate-180 text-[#0f2e5f]' : ''
                     }`}
                   />
                 </button>

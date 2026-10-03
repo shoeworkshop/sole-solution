@@ -36,7 +36,7 @@ Mohon informasi alur kerja sama. Terima kasih!`;
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-[#09493B] text-white">
+    <section className="py-16 sm:py-24 bg-[#0f172a] text-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Header — terpusat */}
         <motion.div
@@ -54,7 +54,7 @@ Mohon informasi alur kerja sama. Terima kasih!`;
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
             {title}
           </h2>
-          <p className="text-sm sm:text-base text-emerald-100/80 mt-3 leading-relaxed">
+          <p className="text-sm sm:text-base text-blue-100/80 mt-3 leading-relaxed">
             {description}
           </p>
         </motion.div>
@@ -72,7 +72,7 @@ Mohon informasi alur kerja sama. Terima kasih!`;
 
             {/* Input nama brand cepat untuk template WhatsApp */}
             <div className="bg-white/10 backdrop-blur-xs p-4 sm:p-5 rounded-2xl border border-white/15 mb-6 space-y-4">
-              <div className="text-xs font-bold text-emerald-200 uppercase tracking-wider">
+              <div className="text-xs font-bold text-blue-200 uppercase tracking-wider">
                 Opsional: Isi Singkat Data Brand
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -112,7 +112,7 @@ Mohon informasi alur kerja sama. Terima kasih!`;
                 <span>{buttonText}</span>
               </a>
 
-              <span className="text-xs text-emerald-100/80 leading-snug">
+              <span className="text-xs text-blue-100/80 leading-snug">
                 {note}
               </span>
             </div>
@@ -120,10 +120,10 @@ Mohon informasi alur kerja sama. Terima kasih!`;
 
           {/* Kolom Kanan: Preview Chat Bubble */}
           <div className="lg:col-span-5">
-            <div className="bg-[#052E25] rounded-2xl border border-[#16A085]/30 p-5 shadow-lg relative">
+            <div className="bg-[#0b132b] rounded-2xl border border-[#1d4ed8]/30 p-5 shadow-lg relative">
               <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/10">
                 <div className="flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                  <div className="w-7 h-7 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center">
                     <Send className="w-3.5 h-3.5" />
                   </div>
                   <span className="text-xs font-bold text-slate-200">
@@ -138,8 +138,8 @@ Mohon informasi alur kerja sama. Terima kasih!`;
                 >
                   {copied ? (
                     <>
-                      <Check className="w-3 h-3 text-emerald-400" />
-                      <span className="text-emerald-400">Tersalin</span>
+                      <Check className="w-3 h-3 text-blue-400" />
+                      <span className="text-blue-400">Tersalin</span>
                     </>
                   ) : (
                     <>
@@ -151,12 +151,12 @@ Mohon informasi alur kerja sama. Terima kasih!`;
               </div>
 
               {/* Chat Bubble Presentation */}
-              <div className="bg-[#0E473B] text-slate-100 p-4 rounded-xl rounded-tr-none text-xs font-mono leading-relaxed border border-[#16A085]/30 whitespace-pre-line shadow-xs">
+              <div className="bg-[#1e293b] text-slate-100 p-4 rounded-xl rounded-tr-none text-xs font-mono leading-relaxed border border-[#1d4ed8]/30 whitespace-pre-line shadow-xs">
                 {previewMessage}
               </div>
 
-              <div className="mt-4 pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-emerald-200/80">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+              <div className="mt-4 pt-3 border-t border-white/10 flex items-center gap-2 text-[11px] text-blue-200/80">
+                <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0" />
                 <span>Langsung terkirim ke tim spesialis B2B Sole Solution</span>
               </div>
             </div>

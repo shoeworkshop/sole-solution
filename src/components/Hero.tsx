@@ -50,7 +50,7 @@ export const Hero: React.FC = () => {
               transition={{ duration: 0.5, ease: easeCurve }}
               className="flex items-center gap-2 mb-4"
             >
-              <span className="block w-8 h-px bg-[#0E6B58]" />
+              <span className="block w-8 h-px bg-[#0f2e5f]" />
               <span className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-slate-500">
                 {siteContent.hero.eyebrow}
               </span>
@@ -82,7 +82,7 @@ export const Hero: React.FC = () => {
                   transition={{ duration: 0.65, delay: 0.12, ease: easeCurve }}
                 >
                   untuk{' '}
-                  <span className="italic text-[#0E6B58]">brand Anda.</span>
+                  <span className="italic text-[#0f2e5f]">brand Anda.</span>
                 </motion.span>
               </span>
             </h1>

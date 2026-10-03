@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm mb-3">
               {siteContent.footer.workshopNotice}
             </p>
-            <div className="text-[11px] text-emerald-400 font-medium">
+            <div className="text-[11px] text-blue-400 font-medium">
               {siteContent.brand.foundingFact}
             </div>
           </div>
@@ -29,21 +29,21 @@ export const Footer: React.FC = () => {
             <h3 className="font-semibold text-white text-sm mb-1">Hubungi Kami</h3>
             
             <div className="flex items-start gap-3">
-              <MapPin className="w-4 h-4 shrink-0 text-emerald-500 mt-0.5" />
+              <MapPin className="w-4 h-4 shrink-0 text-blue-500 mt-0.5" />
               <span className="leading-relaxed">Jalan Kembar 1 No 41 Cigereleng Regol<br />Kota Bandung Jawa Barat 40253</span>
             </div>
             <div className="flex items-center gap-3">
-              <MessageCircle className="w-4 h-4 shrink-0 text-emerald-500" />
+              <MessageCircle className="w-4 h-4 shrink-0 text-blue-500" />
               <a href={waUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white underline transition-colors">
                 +62 851-6812-5219
               </a>
             </div>
             <div className="flex items-center gap-3">
-              <Mail className="w-4 h-4 shrink-0 text-emerald-500" />
+              <Mail className="w-4 h-4 shrink-0 text-blue-500" />
               <a href="mailto:info.shoeworkshop@gmail.com" className="hover:text-white transition-colors">info.shoeworkshop@gmail.com</a>
             </div>
             <div className="flex items-center gap-3">
-              <Clock className="w-4 h-4 shrink-0 text-emerald-500" />
+              <Clock className="w-4 h-4 shrink-0 text-blue-500" />
               <span>Senin - Minggu: 09.00 - 17.00 WIB</span>
             </div>
           </div>

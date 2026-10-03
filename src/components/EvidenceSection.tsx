@@ -126,9 +126,9 @@ export const EvidenceSection: React.FC<EvidenceSectionProps> = ({ forceEmpty = f
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="block w-6 h-px bg-[#0E6B58]" />
+            <span className="block w-6 h-px bg-[#0f2e5f]" />
             <span className="text-xs font-bold tracking-widest uppercase text-slate-400">Galeri & Testimoni</span>
-            <span className="block w-6 h-px bg-[#0E6B58]" />
+            <span className="block w-6 h-px bg-[#0f2e5f]" />
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             {title}
@@ -208,7 +208,7 @@ export const EvidenceSection: React.FC<EvidenceSectionProps> = ({ forceEmpty = f
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Quote className="w-8 h-8 text-[#16A085]/40 mb-6" />
+                  <Quote className="w-8 h-8 text-[#1d4ed8]/40 mb-6" />
                   
                   {/* Kutipan besar dominan */}
                   <blockquote className="text-base sm:text-xl lg:text-2xl font-medium text-slate-800 leading-relaxed sm:leading-snug tracking-tight mb-8">
@@ -221,7 +221,7 @@ export const EvidenceSection: React.FC<EvidenceSectionProps> = ({ forceEmpty = f
                         <div className="text-sm font-bold text-slate-900">
                           {currentTesti.role}
                         </div>
-                        <div className="text-xs text-[#0E6B58] font-medium">
+                        <div className="text-xs text-[#0f2e5f] font-medium">
                           {currentTesti.companyType}
                         </div>
                       </div>
@@ -235,7 +235,7 @@ export const EvidenceSection: React.FC<EvidenceSectionProps> = ({ forceEmpty = f
                           <div
                             key={idx}
                             className={`h-1.5 rounded-full transition-all duration-300 ${
-                              idx === activeTestiIndex ? 'w-4 bg-[#0E6B58]' : 'w-1.5 bg-slate-200'
+                              idx === activeTestiIndex ? 'w-4 bg-[#0f2e5f]' : 'w-1.5 bg-slate-200'
                             }`}
                           />
                         ))}

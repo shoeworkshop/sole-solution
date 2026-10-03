@@ -23,19 +23,19 @@ export const Navbar: React.FC = () => {
 
         {/* Zone 2: Navigation Links: Kenapa Kami, Tiga Program, Alur 7 Langkah, Bukti, FAQ */}
         <nav className="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600 whitespace-nowrap">
-          <a href="#program" className="hover:text-[#0E6B58] transition-colors py-1">
+          <a href="#program" className="hover:text-[#0f2e5f] transition-colors py-1">
             Tiga Program
           </a>
-          <a href="#kenapa-kami" className="hover:text-[#0E6B58] transition-colors py-1">
+          <a href="#kenapa-kami" className="hover:text-[#0f2e5f] transition-colors py-1">
             Kenapa Kami
           </a>
-          <a href="#alur-kerja" className="hover:text-[#0E6B58] transition-colors py-1">
+          <a href="#alur-kerja" className="hover:text-[#0f2e5f] transition-colors py-1">
             Alur 7 Langkah
           </a>
-          <a href="#bukti" className="hover:text-[#0E6B58] transition-colors py-1">
+          <a href="#bukti" className="hover:text-[#0f2e5f] transition-colors py-1">
             Bukti
           </a>
-          <a href="#faq" className="hover:text-[#0E6B58] transition-colors py-1">
+          <a href="#faq" className="hover:text-[#0f2e5f] transition-colors py-1">
             FAQ
           </a>
         </nav>
@@ -73,35 +73,35 @@ export const Navbar: React.FC = () => {
             <a
               href="#program"
               onClick={closeMenu}
-              className="px-2 py-2 rounded-md hover:bg-slate-50 hover:text-[#0E6B58]"
+              className="px-2 py-2 rounded-md hover:bg-slate-50 hover:text-[#0f2e5f]"
             >
               Tiga Program
             </a>
             <a
               href="#kenapa-kami"
               onClick={closeMenu}
-              className="px-2 py-2 rounded-md hover:bg-slate-50 hover:text-[#0E6B58]"
+              className="px-2 py-2 rounded-md hover:bg-slate-50 hover:text-[#0f2e5f]"
             >
               Kenapa Kami
             </a>
             <a
               href="#alur-kerja"
               onClick={closeMenu}
-              className="px-2 py-2 rounded-md hover:bg-slate-50 hover:text-[#0E6B58]"
+              className="px-2 py-2 rounded-md hover:bg-slate-50 hover:text-[#0f2e5f]"
             >
               Alur 7 Langkah
             </a>
             <a
               href="#bukti"
               onClick={closeMenu}
-              className="px-2 py-2 rounded-md hover:bg-slate-50 hover:text-[#0E6B58]"
+              className="px-2 py-2 rounded-md hover:bg-slate-50 hover:text-[#0f2e5f]"
             >
               Bukti
             </a>
             <a
               href="#faq"
               onClick={closeMenu}
-              className="px-2 py-2 rounded-md hover:bg-slate-50 hover:text-[#0E6B58]"
+              className="px-2 py-2 rounded-md hover:bg-slate-50 hover:text-[#0f2e5f]"
             >
               FAQ
             </a>

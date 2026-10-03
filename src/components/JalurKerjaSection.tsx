@@ -16,7 +16,7 @@ export const JalurKerjaSection: React.FC = () => {
   const y = useTransform(scrollYProgress, [0, 1], [100, -180]);
 
   return (
-    <section ref={sectionRef} id="kenapa-kami-jalur" className="pt-4 sm:pt-6 pb-12 sm:pb-16 bg-[#09493B] relative z-20">
+    <section ref={sectionRef} id="kenapa-kami-jalur" className="pt-4 sm:pt-6 pb-12 sm:pb-16 bg-[#0f172a] relative z-20">
       <motion.div style={{ y }} className="max-w-6xl mx-auto px-4 sm:px-6 relative z-20 -mb-[120px] sm:-mb-[180px]">
         
         {/* Timeline Image Area */}
@@ -38,14 +38,14 @@ export const JalurKerjaSection: React.FC = () => {
           <div className="relative z-10 px-6 sm:px-10 lg:px-12 py-12 sm:py-16">
             
             {/* Title */}
-            <h3 className="text-xs sm:text-sm font-bold text-emerald-400 tracking-[0.2em] uppercase mb-12 sm:mb-16 text-center">
+            <h3 className="text-xs sm:text-sm font-bold text-blue-400 tracking-[0.2em] uppercase mb-12 sm:mb-16 text-center">
               Lihat Sendiri Kualitas Kerjanya
             </h3>
 
             {/* Timeline Grid */}
             <div className="w-full relative">
               {/* Horizontal Line connecting nodes (Desktop only) */}
-              <div className="hidden md:block absolute top-1.5 left-1.5 right-1.5 h-px bg-emerald-500/30" />
+              <div className="hidden md:block absolute top-1.5 left-1.5 right-1.5 h-px bg-blue-500/30" />
 
               <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-6">
                 {jalurB2B.spots.map((spot, idx) => (
@@ -58,12 +58,12 @@ export const JalurKerjaSection: React.FC = () => {
                     transition={{ duration: 0.5, delay: idx * 0.1 }}
                   >
                     {/* Node (Dot) */}
-                    <div className="w-3 h-3 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.9)] ring-4 ring-[#09493B] mb-8 mx-auto md:mx-0 relative z-10" />
+                    <div className="w-3 h-3 rounded-full bg-blue-400 shadow-[0_0_12px_rgba(52,211,153,0.9)] ring-4 ring-[#0f172a] mb-8 mx-auto md:mx-0 relative z-10" />
 
                     {/* Text content */}
                     <div className="text-center md:text-left mb-6 flex-1">
                       <h4 className="text-base sm:text-lg font-bold text-white mb-2">{spot.label}</h4>
-                      <p className="text-sm text-emerald-100/70 leading-relaxed">{spot.text}</p>
+                      <p className="text-sm text-blue-100/70 leading-relaxed">{spot.text}</p>
                     </div>
 
                     {/* Image */}
