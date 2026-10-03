@@ -53,7 +53,7 @@ export const WorkflowSection: React.FC = () => {
           {/* Garis vertikal tengah — progress (hijau dengan glow) */}
           <div className="absolute left-5 lg:left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] z-0">
             <motion.div
-              className="w-full bg-[#1d4ed8] origin-top shadow-[0_0_12px_2px_rgba(22,160,133,0.8)]"
+              className="w-full bg-[#1d4ed8] origin-top shadow-[0_0_12px_2px_rgba(29,78,216,0.8)]"
               style={{ scaleY: shouldReduceMotion ? 1 : lineScaleY, height: '100%' }}
             />
           </div>
@@ -174,7 +174,7 @@ const TimelineNode: React.FC<{ step: number }> = ({ step }) => {
       ref={ref}
       className={`flex-shrink-0 w-10 h-10 rounded-full border-2 flex items-center justify-center text-sm font-extrabold shadow-sm z-10 mx-auto lg:mx-0 transition-all duration-500 ease-out ${
         isActive
-          ? 'bg-[#1d4ed8] border-[#1d4ed8] text-white shadow-[0_0_15px_rgba(22,160,133,0.5)] scale-110'
+          ? 'bg-[#1d4ed8] border-[#1d4ed8] text-white shadow-[0_0_15px_rgba(29,78,216,0.5)] scale-110'
           : 'bg-white border-slate-200 text-slate-400 scale-100'
       }`}
     >

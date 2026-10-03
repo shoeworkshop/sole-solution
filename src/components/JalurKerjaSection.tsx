@@ -31,7 +31,7 @@ export const JalurKerjaSection: React.FC = () => {
                 className="w-full h-full object-cover opacity-30 mix-blend-luminosity"
               />
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0B251E] via-[#0B251E]/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0b1a3b] via-[#0b1a3b]/60 to-transparent" />
           </div>
 
           {/* Content Container */}
@@ -58,7 +58,7 @@ export const JalurKerjaSection: React.FC = () => {
                     transition={{ duration: 0.5, delay: idx * 0.1 }}
                   >
                     {/* Node (Dot) */}
-                    <div className="w-3 h-3 rounded-full bg-blue-400 shadow-[0_0_12px_rgba(52,211,153,0.9)] ring-4 ring-[#0f172a] mb-8 mx-auto md:mx-0 relative z-10" />
+                    <div className="w-3 h-3 rounded-full bg-blue-400 shadow-[0_0_12px_rgba(96,165,250,0.9)] ring-4 ring-[#0f172a] mb-8 mx-auto md:mx-0 relative z-10" />
 
                     {/* Text content */}
                     <div className="text-center md:text-left mb-6 flex-1">
