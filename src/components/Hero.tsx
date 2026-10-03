@@ -107,7 +107,7 @@ export const Hero: React.FC = () => {
                 href={waUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-6 py-3.5 text-sm sm:text-base font-bold rounded-lg bg-[#0E4F3A] text-white hover:bg-[#0b3f2e] active:scale-[0.98] transition-all shadow-md"
+                className="inline-flex items-center gap-3 px-6 py-3.5 text-sm sm:text-base font-bold rounded-lg bg-[#0f2e5f] text-white hover:bg-[#0b132b] active:scale-[0.98] transition-all shadow-md"
               >
                 <MessageCircle className="w-5 h-5 shrink-0" />
                 <span>{siteContent.hero.ctaButtonText}</span>

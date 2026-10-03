@@ -16,9 +16,9 @@ export const SoleLogo: React.FC<SoleLogoProps> = ({
   theme = 'light',
 }) => {
   const heightSizes = {
-    sm: 'h-6',
-    md: 'h-8 sm:h-10',
-    lg: 'h-10 sm:h-12',
+    sm: 'h-8',
+    md: 'h-10 sm:h-12',
+    lg: 'h-12 sm:h-14',
   };
 
   return (
