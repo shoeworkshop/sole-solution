@@ -23,7 +23,7 @@ const ProgramPanel: React.FC<ProgramPanelProps> = ({
   const scale = useTransform(progress, range, [1, targetScale]);
 
   const programWaUrl = createWhatsAppUrl({
-    issues: `Konsultasi ${program.title}`,
+    issues: `Diskusi ${program.title}`,
   });
 
   const topOffset = `${72 + index * 20}px`;
@@ -91,7 +91,7 @@ const ProgramPanel: React.FC<ProgramPanelProps> = ({
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl text-xs sm:text-sm font-bold bg-[#5EB6FB] text-[#0f2e5f] hover:bg-[#4BA8F0] active:scale-[0.98] transition-all shadow-sm shadow-sky-200/50"
             >
-              <span>Konsultasikan Kebutuhan Ini</span>
+              <span>Diskusikan Kebutuhan</span>
               <ArrowRight className="w-4 h-4 text-[#0f2e5f]" />
             </a>
           </div>

@@ -16,7 +16,7 @@ export const FloatingWhatsApp: React.FC = () => {
         aria-label="Hubungi WhatsApp B2B"
       >
         <MessageCircle className="w-4 h-4 shrink-0" />
-        <span>Konsultasi B2B</span>
+        <span>Hubungi WhatsApp</span>
       </a>
     </div>
   );
