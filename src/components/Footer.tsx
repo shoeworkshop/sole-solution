@@ -51,11 +51,10 @@ export const Footer: React.FC = () => {
           {/* Kolom 3: Navigasi (Span 3) */}
           <div className="md:col-span-3 flex flex-col gap-3 text-xs font-medium text-slate-300">
             <h3 className="font-semibold text-white text-sm mb-1">Navigasi</h3>
-            <a href="#kenapa-kami" className="hover:text-white transition-colors">Kenapa Kami</a>
             <a href="#program" className="hover:text-white transition-colors">Tiga Program</a>
+            <a href="#kenapa-kami" className="hover:text-white transition-colors">Kenapa Kami</a>
             <a href="#alur-kerja" className="hover:text-white transition-colors">Alur 7 Langkah</a>
-            <a href="#standar" className="hover:text-white transition-colors">Standar</a>
-            <a href="#bukti" className="hover:text-white transition-colors">Dokumentasi</a>
+            <a href="#bukti" className="hover:text-white transition-colors">Bukti</a>
             <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
           </div>
         </div>

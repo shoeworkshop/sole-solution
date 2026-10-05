@@ -115,7 +115,7 @@ export const EvidenceSection: React.FC<EvidenceSectionProps> = ({ forceEmpty = f
   if (!hasData) return null;
 
   return (
-    <section id="bukti" className="py-16 sm:py-24 bg-white border-b border-slate-200">
+    <section id="bukti" className="scroll-mt-20 py-16 sm:py-24 bg-white border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header — terpusat */}
         <motion.div

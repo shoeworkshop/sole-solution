@@ -112,7 +112,7 @@ export const ProgramsSection: React.FC = () => {
   });
 
   return (
-    <section id="program" ref={containerRef} className="py-16 sm:py-24 bg-white border-b border-slate-200">
+    <section id="program" ref={containerRef} className="scroll-mt-20 py-16 sm:py-24 bg-white border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header — terpusat */}
         <div className="text-center max-w-2xl mx-auto mb-16">

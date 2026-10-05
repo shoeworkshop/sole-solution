@@ -27,7 +27,7 @@ export const WorkflowSection: React.FC = () => {
   }, [trackingLive, trackingSteps.length]);
 
   return (
-    <section id="alur-kerja" ref={containerRef} className="py-16 sm:py-28 bg-white border-b border-slate-200">
+    <section id="alur-kerja" ref={containerRef} className="scroll-mt-20 py-16 sm:py-28 bg-white border-b border-slate-200">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
 
         {/* Header — terpusat */}

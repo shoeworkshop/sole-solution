@@ -14,7 +14,7 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-16 sm:py-24 bg-slate-50/50 border-b border-slate-200">
+    <section id="faq" className="scroll-mt-20 py-16 sm:py-24 bg-slate-50/50 border-b border-slate-200">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         {/* Header — terpusat */}
         <motion.div

@@ -21,7 +21,7 @@ export const ComparisonSection: React.FC = () => {
   const opacity = useTransform(scrollYProgress, [0.3, 0.8], [1, 0]);
 
   return (
-    <section ref={sectionRef} id="kenapa-kami-tabel" className="pt-16 sm:pt-24 pb-16 sm:pb-24 bg-[#0f172a] relative z-10 overflow-hidden">
+    <section ref={sectionRef} id="kenapa-kami" className="scroll-mt-20 pt-16 sm:pt-24 pb-16 sm:pb-24 bg-[#0f172a] relative z-10 overflow-hidden">
       <motion.div style={{ opacity }} className="max-w-6xl mx-auto px-4 sm:px-6">
         
         {/* Header */}

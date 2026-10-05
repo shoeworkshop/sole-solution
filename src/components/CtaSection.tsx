@@ -14,18 +14,22 @@ export const CtaSection: React.FC = () => {
   const [issueType, setIssueType] = useState('');
   const [copied, setCopied] = useState(false);
 
-  const customWaUrl = createWhatsAppUrl({
-    brandName: brandName || '[Nama Brand Anda]',
-    volume: volume || '[Estimasi Pasang / Bulan]',
-    issues: issueType || '[Jenis Kerusakan Sol / Jahitan / Cacat]',
-  });
+  const customWaUrl = createWhatsAppUrl(
+    brandName.trim() || volume.trim() || issueType.trim()
+      ? {
+          brandName: brandName.trim(),
+          volume: volume.trim(),
+          issues: issueType.trim(),
+        }
+      : undefined
+  );
 
   const previewMessage = `Halo Tim Sole Solution,
 
-Saya ingin konsultasi reparasi B2B untuk brand kami:
-- Nama Brand: ${brandName || '[Nama Brand Anda]'}
+Saya ingin konsultasi kerja sama B2B untuk bisnis kami:
+- Nama Bisnis (Brand / Laundry): ${brandName || '[Nama Brand Anda]'}
 - Estimasi Volume per Bulan: ${volume || '[Estimasi Pasang / Bulan]'}
-- Jenis Kerusakan / Kebutuhan: ${issueType || '[Jenis Kerusakan Sol / Jahitan / Cacat]'}
+- Jenis Kebutuhan: ${issueType || '[Reglue / Jahit / Pasang Sol / Cacat Produksi]'}
 
 Mohon informasi alur kerja sama. Terima kasih!`;
 

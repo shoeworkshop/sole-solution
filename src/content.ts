@@ -128,7 +128,7 @@ export const siteContent: SiteContent = {
     whatsappDefaultMessage: 
 `Halo Tim Sole Solution,
 
-Saya ingin konsultasi reglue B2B untuk bisnis kami:
+Saya ingin konsultasi kerja sama B2B untuk bisnis kami:
 - Nama Bisnis (Brand / Laundry): 
 - Estimasi Volume per Bulan: 
 - Jenis Kebutuhan: 
@@ -422,7 +422,7 @@ export function createWhatsAppUrl(customParams?: {
 
     text = `Halo Tim Sole Solution,
 
-Saya ingin konsultasi reglue B2B untuk bisnis kami:
+Saya ingin konsultasi kerja sama B2B untuk bisnis kami:
 - Nama Bisnis (Brand / Laundry): ${brand}
 - Estimasi Volume per Bulan: ${vol}
 - Jenis Kebutuhan: ${iss}
