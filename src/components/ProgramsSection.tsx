@@ -49,8 +49,8 @@ const ProgramPanel: React.FC<ProgramPanelProps> = ({
         </div>
 
         <div className="relative z-10 max-w-3xl">
-          {/* Top Blue Accent Bar */}
-          <div className="w-10 h-1.5 rounded-full bg-[#1d4ed8] mb-6" />
+          {/* Top Navy Accent Bar */}
+          <div className="w-10 h-1.5 rounded-full bg-[#0f2e5f] mb-6" />
 
           <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2 tracking-tight">
             {program.title}
