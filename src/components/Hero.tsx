@@ -89,7 +89,7 @@ export const Hero: React.FC = () => {
 
             {/* Sub-headline */}
             <motion.p
-              className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-md mb-8"
+              className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-lg mb-8"
               initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.28, ease: easeCurve }}
