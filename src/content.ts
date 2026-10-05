@@ -139,7 +139,7 @@ Mohon informasi alur kerja sama. Terima kasih!`,
     eyebrow: "Layanan khusus reglue, jahit, & Sol B2B...",
     headline: "Partner reglue sepatu untuk brand dan laundry sepatu.",
     singleSentence: "Solusi tuntas untuk reglue, jahit, hingga pasang sol baru. Dikerjakan eksklusif di jalur B2B (terpisah dari ritel) dengan sistem 3 tahap QC dan kepastian estimasi 10-15 hari kerja per batch.",
-    ctaButtonText: "Konsultasi Sekarang",
+    ctaButtonText: "Bermitra Sekarang",
     photoSlot: {
       label: "Foto close-up proses reglue",
       caption: "Reglue dan mesin press",
