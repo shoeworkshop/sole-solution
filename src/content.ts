@@ -136,7 +136,7 @@ Saya ingin konsultasi reglue B2B untuk bisnis kami:
 Mohon informasi alur kerja sama. Terima kasih!`,
   },
   hero: {
-    eyebrow: "Layanan reglue (lem & jahit) sepatu",
+    eyebrow: "Layanan khusus reglue, jahit, & Sol B2B...",
     headline: "Partner reglue sepatu untuk brand dan laundry sepatu.",
     singleSentence: "Sol lepas dan jahitan terlepas dikerjakan di workshop kami di Bandung: dua kali QC, jalur terpisah dari antrean ritel, estimasi 10-15 hari kerja.",
     ctaButtonText: "Konsultasi Sekarang",
@@ -357,6 +357,11 @@ Mohon informasi alur kerja sama. Terima kasih!`,
         id: "faq-1",
         question: "Jenis pekerjaan apa yang diterima?",
         answer: "Fokus kami reglue (pengeleman ulang) dan jahit ulang sol. Kebutuhan lain bisa dikonsultasikan lebih dulu.",
+      },
+      {
+        id: "faq-ganti-sol",
+        question: "Apakah melayani ganti sol (Sole Replacement)?",
+        answer: "Ya, kami melayani jasa bongkar-pasang sol baru. Khusus untuk mitra B2B, layanan ini murni berupa jasa pengerjaan (assembly), sehingga material sol baru disediakan sepenuhnya oleh pihak brand/laundry Anda.",
       },
       {
         id: "faq-2",
