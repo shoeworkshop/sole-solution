@@ -107,11 +107,11 @@ export const Hero: React.FC = () => {
                 href={waUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-6 py-3.5 text-sm sm:text-base font-bold rounded-lg bg-[#0f2e5f] text-white hover:bg-[#0b132b] active:scale-[0.98] transition-all shadow-md"
+                className="inline-flex items-center gap-3 px-6 py-3.5 text-sm sm:text-base font-bold rounded-lg bg-[#5EB6FB] text-[#0f2e5f] hover:bg-[#4BA8F0] active:scale-[0.98] transition-all shadow-md shadow-sky-200/50"
               >
-                <MessageCircle className="w-5 h-5 shrink-0" />
+                <MessageCircle className="w-5 h-5 shrink-0 text-[#0f2e5f]" />
                 <span>{siteContent.hero.ctaButtonText}</span>
-                <span className="text-white/60">→</span>
+                <span className="text-[#0f2e5f]/70 font-bold">→</span>
               </a>
             </motion.div>
 
