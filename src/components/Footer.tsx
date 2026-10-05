@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
             </div>
             <div className="flex items-center gap-3">
               <Clock className="w-4 h-4 shrink-0 text-blue-500" />
-              <span>Senin - Minggu: 09.00 - 17.00 WIB</span>
+              <span>Senin - Sabtu: 09.00 - 17.00 WIB</span>
             </div>
           </div>
 
