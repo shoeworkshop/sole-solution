@@ -52,7 +52,7 @@ export const Hero: React.FC = () => {
             >
               <span className="block w-8 h-px bg-[#0f2e5f]" />
               <span className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-slate-500">
-                {siteContent.hero.eyebrow}
+                Layanan khusus reglue, jahit, &amp; Sol <span className="font-extrabold text-[#5EB6FB] italic">B2B</span>
               </span>
             </motion.div>
 
