@@ -81,7 +81,7 @@ const ProgramPanel: React.FC<ProgramPanelProps> = ({
               href={programWaUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs sm:text-sm font-bold bg-[#FFC43D] text-[#0F172A] hover:bg-[#ffbe26] transition-colors shadow-2xs"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs sm:text-sm font-bold bg-[#5EB6FB] text-[#0F172A] hover:bg-[#4BA8F0] transition-colors shadow-2xs"
             >
               <span>Konsultasikan Kebutuhan Ini</span>
               <ArrowRight className="w-4 h-4" />

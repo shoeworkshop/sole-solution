@@ -12,7 +12,7 @@ export const FloatingWhatsApp: React.FC = () => {
         href={waUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#FFC43D] text-[#0F172A] font-bold text-xs shadow-lg active:scale-95 transition-all border border-amber-300"
+        className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#5EB6FB] text-[#0F172A] font-bold text-xs shadow-lg active:scale-95 transition-all border border-blue-300"
         aria-label="Hubungi WhatsApp B2B"
       >
         <MessageCircle className="w-4 h-4 shrink-0" />

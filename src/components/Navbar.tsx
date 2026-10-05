@@ -46,7 +46,7 @@ export const Navbar: React.FC = () => {
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold rounded-lg bg-[#FFC43D] text-[#0F172A] hover:bg-[#ffbe26] active:scale-[0.98] transition-all shadow-xs whitespace-nowrap shrink-0"
+            className="inline-flex items-center justify-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold rounded-lg bg-[#5EB6FB] text-[#0F172A] hover:bg-[#4BA8F0] active:scale-[0.98] transition-all shadow-xs whitespace-nowrap shrink-0"
           >
             <MessageCircle className="w-4 h-4 shrink-0" />
             <span className="hidden sm:inline">Hubungi WhatsApp</span>

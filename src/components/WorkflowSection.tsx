@@ -146,7 +146,7 @@ const StepCard: React.FC<StepCardProps> = ({ st, trackingLive, activeStep, track
             return (
               <div key={sIdx} className="flex flex-row sm:flex-col items-center gap-3 sm:gap-1 sm:text-center">
                 <div className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold transition-all ${
-                  isCurrent ? 'bg-[#FFC43D] text-[#0F172A] ring-2 ring-[#FFC43D]/40'
+                  isCurrent ? 'bg-[#5EB6FB] text-[#0F172A] ring-2 ring-[#5EB6FB]/40'
                   : isPast   ? 'bg-[#1d4ed8] text-white'
                              : 'bg-slate-100 text-slate-400'
                 }`}>

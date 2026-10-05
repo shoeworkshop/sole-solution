@@ -86,7 +86,7 @@ export const JalurKerjaSection: React.FC = () => {
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 text-sm font-bold rounded-xl bg-[#FFC43D] text-[#0F172A] hover:bg-[#ffbe26] active:scale-[0.98] transition-all shadow-md hover:shadow-lg"
+            className="inline-flex items-center gap-3 px-8 py-4 text-sm font-bold rounded-xl bg-[#5EB6FB] text-[#0F172A] hover:bg-[#4BA8F0] active:scale-[0.98] transition-all shadow-md hover:shadow-lg"
           >
             <MessageCircle className="w-5 h-5 shrink-0" />
             <span>Konsultasi Sekarang</span>

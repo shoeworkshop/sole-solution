@@ -78,12 +78,12 @@ export const ComparisonSection: React.FC = () => {
                       className={`group w-full text-left px-5 py-4 rounded-2xl flex items-center gap-4 transition-all duration-300 ${isActive ? 'bg-white/15 text-white shadow-md' : 'text-white/50 hover:bg-white/5'}`}
                     >
                       <div className="relative shrink-0 flex items-center justify-center w-8 h-8 bg-black/20 rounded-lg">
-                        <Icon className={`w-4 h-4 ${isActive ? 'text-[#FFC43D]' : 'text-white/40'}`} />
+                        <Icon className={`w-4 h-4 ${isActive ? 'text-[#5EB6FB]' : 'text-white/40'}`} />
                       </div>
-                      <span className={`text-sm sm:text-base font-bold flex-1 ${isActive ? 'text-[#FFC43D]' : 'text-white/70'}`}>
+                      <span className={`text-sm sm:text-base font-bold flex-1 ${isActive ? 'text-[#5EB6FB]' : 'text-white/70'}`}>
                         {row.feature}
                       </span>
-                      <ChevronRight className={`w-5 h-5 transition-transform duration-300 ${isActive ? 'text-[#FFC43D] rotate-90 lg:translate-x-1 lg:rotate-0' : 'text-white/20 group-hover:text-white/40'}`} />
+                      <ChevronRight className={`w-5 h-5 transition-transform duration-300 ${isActive ? 'text-[#5EB6FB] rotate-90 lg:translate-x-1 lg:rotate-0' : 'text-white/20 group-hover:text-white/40'}`} />
                     </button>
                     
                     {/* Mobile Accordion Content */}

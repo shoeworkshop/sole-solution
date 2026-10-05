@@ -81,14 +81,14 @@ Mohon informasi alur kerja sama. Terima kasih!`;
                   placeholder="Nama Brand Anda"
                   value={brandName}
                   onChange={(e) => setBrandName(e.target.value)}
-                  className="w-full px-4 py-2.5 text-sm rounded-xl bg-white/95 text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#FFC43D] transition-shadow shadow-inner"
+                  className="w-full px-4 py-2.5 text-sm rounded-xl bg-white/95 text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#5EB6FB] transition-shadow shadow-inner"
                 />
                 <input
                   type="text"
                   placeholder="Est. Volume (cth. 20–30 pasang/bln)"
                   value={volume}
                   onChange={(e) => setVolume(e.target.value)}
-                  className="w-full px-4 py-2.5 text-sm rounded-xl bg-white/95 text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#FFC43D] transition-shadow shadow-inner"
+                  className="w-full px-4 py-2.5 text-sm rounded-xl bg-white/95 text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#5EB6FB] transition-shadow shadow-inner"
                 />
               </div>
               <textarea
@@ -96,7 +96,7 @@ Mohon informasi alur kerja sama. Terima kasih!`;
                 value={issueType}
                 onChange={(e) => setIssueType(e.target.value)}
                 rows={3}
-                className="w-full px-4 py-3 text-sm rounded-xl bg-white/95 text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#FFC43D] transition-shadow shadow-inner resize-none"
+                className="w-full px-4 py-3 text-sm rounded-xl bg-white/95 text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#5EB6FB] transition-shadow shadow-inner resize-none"
               />
             </div>
 
@@ -106,7 +106,7 @@ Mohon informasi alur kerja sama. Terima kasih!`;
                 href={customWaUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-6 py-3.5 text-sm sm:text-base font-bold rounded-lg bg-[#FFC43D] text-[#0F172A] hover:bg-[#ffbe26] active:scale-[0.98] transition-all shadow-md whitespace-nowrap"
+                className="inline-flex items-center justify-center gap-3 px-6 py-3.5 text-sm sm:text-base font-bold rounded-lg bg-[#5EB6FB] text-[#0F172A] hover:bg-[#4BA8F0] active:scale-[0.98] transition-all shadow-md whitespace-nowrap"
               >
                 <MessageCircle className="w-5 h-5 shrink-0" />
                 <span>{buttonText}</span>
